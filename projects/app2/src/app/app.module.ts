@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
+import { NavComponent } from './components/nav/nav.component';
 
 // Definimos los Providers de forma aislada para compartirlos
 const providers: any[] = [
@@ -14,7 +15,8 @@ const providers: any[] = [
   declarations: [
     AppComponent,
     HomePageComponent,
-    SettingsPageComponent
+    SettingsPageComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
