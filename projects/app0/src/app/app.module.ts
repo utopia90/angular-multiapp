@@ -10,6 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { App1SharedModule } from 'projects/app1/src/app/app.module';
+import { App2SharedModule } from 'projects/app2/src/app/app.module';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,15 @@ import { MatListModule } from '@angular/material/list';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // Módulos compartidos de App1 y App2
+    App1SharedModule.forRoot(),
+    App2SharedModule.forRoot(),
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
