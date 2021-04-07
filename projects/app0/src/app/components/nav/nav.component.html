@@ -5,9 +5,8 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLink='/app1'>App 1</a>
+      <a mat-list-item routerLink='/app2'>App2 </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -23,5 +22,7 @@
       <span>App0</span>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <!-- Contenido de las aplicaciones App1 y App2 se cargará aquí -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
